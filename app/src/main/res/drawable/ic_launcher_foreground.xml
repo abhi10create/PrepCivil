@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Indigo Rounded Glowing Container Box -->
+    <path
+        android:pathData="M 41,27 H 67 C 74.7,27 81,33.3 81,41 V 67 C 81,74.7 74.7,81 67,81 H 41 C 33.3,81 27,74.7 27,67 V 41 C 27,33.3 33.3,27 41,27 Z"
+        android:fillColor="#26818CF8"
+        android:strokeWidth="2.5"
+        android:strokeColor="#818CF8" />
+
+    <!-- 'P' Stem -->
+    <path
+        android:pathData="M 39,42 V 66"
+        android:strokeWidth="5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+
+    <!-- 'P' Loop -->
+    <path
+        android:pathData="M 39,42 H 46 C 50,42 53,44 53,48 C 53,52 50,54 46,54 H 39"
+        android:strokeWidth="5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- 'C' Arc -->
+    <path
+        android:pathData="M 70,44 C 66,41 60,41 57,45 C 54,49 54,59 57,63 C 60,67 66,67 70,64"
+        android:strokeWidth="5"
+        android:strokeColor="#818CF8"
+        android:strokeLineCap="round" />
+</vector>
+

@@ -1,0 +1,6 @@
+{
+  "name": "PrepCivil",
+  "description": "Fast, lightweight split-screen educational study application with reader, E-Register canvas, flashcards, and quiz engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
