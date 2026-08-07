@@ -347,7 +347,10 @@ fun StorePane(
             }
           }
         }
-
+Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(12.dp)
+      ) {
      {
         // Pro Pass Monthly Tier Card
         Card(
