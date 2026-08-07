@@ -347,7 +347,50 @@ fun StorePane(
             }
           }
         }
-Row(
+// Single Subject Access Card
+        Card(
+          modifier = Modifier
+            .weight(1f)
+            .testTag("subject_tier_card"),
+          shape = RoundedCornerShape(16.dp),
+          colors = CardDefaults.cardColors(containerColor = DarkContainer),
+          border = CardDefaults.outlinedCardBorder().copy(
+            brush = androidx.compose.ui.graphics.SolidColor(DarkBorder)
+          )
+        ) {
+          Column(
+            modifier = Modifier.padding(14.dp),
+            horizontalAlignment = Alignment.Start
+          ) {
+            Text(text = "Single Subject", fontSize = 14.sp, fontWeight = FontWeight.Bold, color = TextPrimary)
+            Text(text = "₹399 / lifetime", fontSize = 16.sp, fontWeight = FontWeight.ExtraBold, color = Color(0xFF81D4FA))
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            TierCheck("Unlock 1 Complete Book")
+            TierCheck("All chapters in subject")
+            TierCheck("Subject Flashcard Deck")
+
+            Spacer(modifier = Modifier.height(14.dp))
+
+            Button(
+              onClick = onOpenUpgradeModal,
+              colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0288D1)),
+              shape = RoundedCornerShape(8.dp),
+              modifier = Modifier.fillMaxWidth().testTag("subject_tier_button")
+            ) {
+              Text(
+                text = "Buy Subject",
+                color = Color.White,
+                fontSize = 11.sp,
+                fontWeight = FontWeight.Bold
+              )
+            }
+          }
+        }
+      }
+
+      Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(12.dp)
       ) {
